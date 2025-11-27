@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Armin Ghassemi— developer, designer, creator." />
+  <title>Armin Ghassemi</title>
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --accent:#06b6d4; --muted:#94a3b8; --text:#e6eef6;
+      --radius:12px; --maxw:1000px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#071029 0%,var(--bg) 100%);color:var(--text);line-height:1.5}
+    .wrap{max-width:var(--maxw);margin:36px auto;padding:24px}
+    header{display:flex;gap:20px;align-items:center}
+    .avatar{width:120px;height:120px;border-radius:16px;overflow:hidden;flex:0 0 120px;background:#0a1220;border:1px solid rgba(255,255,255,0.04)}
+    .avatar img{width:100%;height:100%;object-fit:cover;display:block}
+    .intro h1{margin:0;font-size:28px;letter-spacing:-0.02em}
+    .intro p{margin:8px 0;color:var(--muted)}
+    .cta{margin-top:12px;display:flex;gap:10px}
+    .btn{background:var(--accent);color:#042028;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600}
+    .btn.secondary{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--text)}
+    main{display:grid;grid-template-columns:1fr;gap:20px;margin-top:28px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:var(--radius);border:1px solid rgba(255,255,255,0.03)}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+    h2{margin:0 0 12px 0;font-size:18px}
+    .projects .project{padding:12px;border-radius:10px;background:rgba(255,255,255,0.01);border:1px solid rgba(255,255,255,0.02)}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:rgba(255,255,255,0.03);padding:8px 10px;border-radius:999px;font-size:13px;color:var(--muted)}
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13px}
+    form label{display:block;font-size:13px;color:var(--muted);margin-bottom:6px}
+    input,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:var(--text)}
+    textarea{min-height:120px;resize:vertical}
+    @media(max-width:800px){
+      .grid{grid-template-columns:1fr}
+      header{flex-direction:row;gap:14px}
+      .avatar{width:96px;height:96px;flex:0 0 96px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="avatar">
+        <img src="mypro.png" alt="Armin" />
+      </div>
+      <div class="intro">
+        <h1>ArminGhassemi</h1>
+        <p><strong>Role</strong> — Developer · Designer · Creator</p>
+        <p>I am cool developer :D , I'm learning most of programming languages</p>
+        <div class="cta">
+          <a class="btn" href="#projects">See Projects</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="card about" id="about">
+        <h2>About</h2>
+        <p><strong>Armin</strong> is a programmer based in Iran. You specialize in building DBcake, with a focus on Database. Mention a notable achievement, a short story about how you started, or what motivates you.</p>
+        <p><strong>Current focus</strong> — Briefly state what you are working on now and what you want to do next.</p>
+      </section>
+
+      <section class="card projects" id="projects">
+        <h2>Projects</h2>
+        <div class="grid">
+          <div class="project">
+            <h3>DBcake</h3>
+            <p>Dbcake is my database project that I made it for c++ and c and python and java! this is library that can help you for security and database and API!</p>
+            <p style="color:var(--muted);font-size:13px">Java , C++ , Python</p>
+          </div>
+          <div class="project">
+            <h3>Plusm</h3>
+            <p>Plusm is a QR code generator that can generate Ultimate texts and ultimate file formats !! and thats so cool and I love it and I made it with Python</p>
+            <p style="color:var(--muted);font-size:13px">Python</p>
+        </div>
+      </section>
+
+      <section class="card" id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+          <span class="skill">JavaScript</span>
+          <span class="skill">C++</span>
+          <span class="skill">C</span>
+          <span class="skill">HTML</span>
+          <span class="skill">CSS</span>
+          <span class="skill">Python</span>
+          <span class="skill">UI Design</span>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div style="margin-bottom:8px">© <span id="year"></span>ArminGhassemi Build with ☺</div>
+    </footer>
+  </div>
+
+</body>
+</html>
